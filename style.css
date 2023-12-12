@@ -116,7 +116,6 @@ body {
 @media screen and (max-width: 900px) {
   .hamburger {
     display: block;
-    margin-left: 50px;
     margin-right: 3px;
   }
 
@@ -148,5 +147,12 @@ body {
   .nav-links.activated {
     left: 0;
     background-color: #001233;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .header-text span {
+    display: inline-block;
+    min-width: max-content;
   }
 }
