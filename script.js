@@ -12,6 +12,7 @@ function closeMenu() {
 }
 
 hamburger.addEventListener('click', toggleHamburger);
+
 navLinks.addEventListener('click', (event) => {
   event.preventDefault();
   closeMenu();
