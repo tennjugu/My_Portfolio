@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Tenn Jugu | My Portfolio</title>
 </head>
@@ -13,10 +14,10 @@
                 <p class="nav-name">T<span>ENN</span></p>
             </div>
             <ul class="nav-links">
-                <li class="nav-item"><a href="">Home</a></li>
-                <li class="nav-item"><a href="">About</a></li>
-                <li class="nav-item"><a href="">Projects</a></li>
-                <li class="nav-item"><a href="">Contact</a></li>
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#projects">Projects</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class = "bar"></span>
@@ -24,14 +25,116 @@
                 <span class = "bar"></span>
             </div>
         </nav>
-        <div class="front-page">
-            <div class="header-text">
-                <p>Front-End Developer </p>
-                <h1>Hi, I'm <span>Tenn Jugu</span></h1>
+        <section id="home">
+            <div class="front-page">
+                <div class="header-text">
+                    <p>Front-End Developer </p>
+                    <h1>Hi, I'm <span>Tenn Jugu</span></h1>
+                </div>
+                <div class="profile-image">
+                    <img src="./assets/my_picture.png" alt="my profile image">
+                </div>
             </div>
-            <div class="profile-image">
-                <img src="./assets/my_picture.png" alt="my profile image">
+        </section>
+        <section id="about">
+            <div class="about">
+                <h1>About Me</h1>
+                <div class="about-section">
+                    <div class="intro">
+                        <h3>My Introduction</h3>
+                        <p>I possess an immense passion in design and user experience and I'm proficient in HTML, CSS, and JavaScript.
+                            My passion is creating websites that are both visually appealing and responsive, seamlessly integrating functionality and style.
+                        </p>
+                    </div>
+                    <div class="skillset">
+                        <h3>TOP SKILLS</h3>
+                        <div class="skill-list">
+                            <ul>
+                                <li>
+                                    <h4>Languages</h4>
+                                </li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h4>Tools</h4>
+                                </li>
+                                <li>Git</li>
+                                <li>Github</li>
+                                <li>VSCode</li>
+                                <li>Chrome Dev Tools</li>
+                                <li>Terminal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <section id="projects">
+                <div class="projects">
+                    <div class="project-header">
+                        <h1>Projects</h1>
+                    </div>
+                    <div class="project-box">
+                        <div class="project">
+                            <div class="project-img">
+                                <img src="./assets/TOP movies.png" alt="TOP movies home-page">
+                            </div>
+                            <div class="project-body">
+                                <h3>TOP movies</h3>
+                                <p>An app for movies that offers details about movies and lets users search for them, leave comments, make reservations, and 'like'movie.</p>
+                                <a href="https://github.com/tennjugu/Capstone-project-II" rel="noopener" target="_blank">Read more</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-img">
+                                <img src="./assets/TodoList App.png" alt="image of to-do List App">
+                            </div>
+                            <div class="project-body">
+                                <h3>To-do List App</h3>
+                                <p>An app for creating and organizing to-do lists.</p>
+                                <a href="https://github.com/tennjugu/To-do-List" rel="noopener" target="_blank">Read more</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-img">
+                                <img src="./assets/Weather App.png" alt="image of weather app">
+                            </div>
+                            <div class="project-body">
+                                <h3>Weather App</h3>
+                                <p>A weather app that retrieves weather data for a searched area.</p>
+                                <a href="https://github.com/tennjugu/Weather_App" rel="noopener" target="_blank">Read more</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="project-img">
+                                <img src="./assets/Restaurant Page.png" alt="home-page of a restaurant">
+                            </div>
+                            <div class="project-body">
+                                <h3>Restaurant Page</h3>
+                                <p>A restaurant homepage.</p>
+                                <a href="https://github.com/tennjugu/Restaurant-Page" rel="noopener" target="_blank">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div>
+        </section>
+            <section id="contact">
+                <div class="contact">
+                    <h1>Contact me</h1>
+                    <div class="contact-body">
+                        <span>Do you have a project in your mind, contact me.</span>
+                        <div class="accounts">
+                            <a href="mailto:jugutenn@gmail.com"><img src="./assets/email.svg" alt="email"></a>
+                            <a href="https://github.com/tennjugu" rel="noopener" target="_blank"><i class="devicon-github-original colored"></i></a>
+                            <a href="https://www.linkedin.com/in/teneratjugu/" rel="noopener" target="_blank"><i class="devicon-linkedin-plain colored"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <script src="script.js"></script>
