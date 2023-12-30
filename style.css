@@ -14,6 +14,10 @@ body {
   position: relative;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #container {
   width: 100vw;
   position: relative;
@@ -298,9 +302,13 @@ li .vscodeImg {
   width: 100%;
 }
 
-.projects {
+.projects,
+.contact {
   padding-block: 6em;
-  padding-block-end: 20em;
+}
+
+.contact {
+  padding-block-end: 15em;
 }
 
 .about h1,
@@ -333,6 +341,7 @@ li .vscodeImg {
   transition: 0.7s ease;
   margin: 25px 0;
   margin-bottom: 50px;
+  width: 100px;
 }
 
 .button:hover {
@@ -340,6 +349,39 @@ li .vscodeImg {
   transition: 0.7s ease;
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.2);
 }
+
+.contact-body {
+  display: flex;
+  align-items: center;
+}
+
+div .contact-me {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  min-height: 300px;
+}
+
+.contact-me input {
+  margin: 10px 0px;
+  height: 35px;
+}
+
+.contact-me textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.contact-me input,
+.contact-me textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.contact-me button {
+  margin-left: auto;
+} 
 
 @media screen and (max-width: 1024px) {
   .front-page {

@@ -1,6 +1,6 @@
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
-const allHeaderLinks = document.querySelectorAll('.header-links');
+const sections = document.querySelectorAll('section[id]');
 
 function toggleHamburger() {
   hamburger.classList.toggle('active');
@@ -36,18 +36,7 @@ scrollTo.forEach((clickedNav) => {
   clickedNav.addEventListener('click', scrollIntoView);
 });
 
-allHeaderLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    allHeaderLinks.forEach((navLink) => {
-      navLink.classList.remove('onpage');
-    });
-    link.classList.add('onpage');
-  });
-});
-
-const sections = document.querySelectorAll('section[id]');
 function scrollActive() {
-  console.log('Scrolling');
   const scrollY = window.pageYOffset;
 
   sections.forEach((current) => {
@@ -55,13 +44,10 @@ function scrollActive() {
     const sectionTop = current.offsetTop - 50;
     const sectionId = current.getAttribute('id');
 
-    console.log(`Section: ${sectionId}, Top: ${sectionTop}, Height: ${sectionHeight}`);
-
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelectorAll('.nav-links a').forEach((navLink) => {
-        navLink.classList.remove('onpage');
-      });
       document.querySelector(`.nav-links a[href*=${sectionId}]`).classList.add('onpage');
+    } else {
+      document.querySelector(`.nav-links a[href*=${sectionId}]`).classList.remove('onpage');
     }
   });
 }
