@@ -44,3 +44,26 @@ allHeaderLinks.forEach((link) => {
     link.classList.add('onpage');
   });
 });
+
+const sections = document.querySelectorAll('section[id]');
+function scrollActive() {
+  console.log('Scrolling');
+  const scrollY = window.pageYOffset;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    const sectionId = current.getAttribute('id');
+
+    console.log(`Section: ${sectionId}, Top: ${sectionTop}, Height: ${sectionHeight}`);
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document.querySelectorAll('.nav-links a').forEach((navLink) => {
+        navLink.classList.remove('onpage');
+      });
+      document.querySelector(`.nav-links a[href*=${sectionId}]`).classList.add('onpage');
+    }
+  });
+}
+
+window.addEventListener('scroll', scrollActive);

@@ -109,12 +109,8 @@ body {
   padding-block: 6em;
 }
 
-.about-section {
-  display: flex;
-  justify-content: space-around;
-}
-
 .about h1,
+.skillset h1,
 .project-header h1,
 #contact {
   margin-bottom: 2em;
@@ -122,12 +118,27 @@ body {
   color: black;
 }
 
-.intro,
 .skillset {
   padding: 20px;
   border-radius: 10px;
-  width: 40%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  padding-block: 6em;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.intro img {
+  width:350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.intro p {
+  padding-left: 30px;
 }
 
 .intro h3,
@@ -150,10 +161,20 @@ body {
 .skillset li {
   list-style-type: none;
   text-align: left;
+  font-size: 1em;
 }
 
 .skillset li h4 {
   font-size: 1.1rem;
+}
+
+.skill-mockup {
+  width: 400px;
+  border-radius: 10px;
+}
+
+li .vscodeImg {
+  width: 12px;
 }
 
 #contact i {
@@ -279,12 +300,15 @@ body {
 
 .projects {
   padding-block: 6em;
+  padding-block-end: 20em;
 }
 
 .about h1,
+.skillset h1,
 .project-header h1,
 .contact h1 {
-  font-size: 1.6em;
+  text-align: center;
+  font-size: 2em;
   color: #ff595a;
 }
 
@@ -379,6 +403,11 @@ body {
     padding-top: 4em;
     height: 90vh;
   }
+
+  .intro img {
+    width:250px;
+    height: auto;
+  }  
 }
 
 @media screen and (max-width: 590px) {
@@ -391,11 +420,29 @@ body {
     display: block;
   }
 
+  .intro {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
   .intro,
   .skillset {
     width: 90%;
     justify-content: center;
     margin-bottom: 25px;
+  }
+
+  .skill-list {
+    flex-direction: column;
+  }
+
+  .skill-mockup {
+    width: 350px;
+  }
+
+  .listed-skills {
+    padding-left: 2em;
   }
 
   .projects {
