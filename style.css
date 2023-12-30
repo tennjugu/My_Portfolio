@@ -273,7 +273,7 @@ body {
   background-color:#ff595a;
 }
 
-.header-links.onpage::after {
+.onpage::after {
   width: 100%;
 }
 
