@@ -351,7 +351,7 @@ div .contact-me {
   justify-content: center;
   flex-direction: column;
   width: 50%;
-  min-height: 300px;
+  min-width: 300px;
 }
 
 .contact-me input {
@@ -368,6 +368,10 @@ div .contact-me {
 .contact-me textarea {
   border: 1px solid black;
   border-radius: 5px;
+}
+
+.contact-me label {
+  display: none;
 }
 
 .contact-me button {
@@ -476,6 +480,7 @@ div .contact-me {
 
   .listed-skills {
     padding-left: 2em;
+    margin-bottom: 50px;
   }
 
   .projects {
