@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto&family=Roboto+Slab&display=swap');
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 * {
@@ -136,7 +135,7 @@ html {
 }
 
 .intro img {
-  width:350px;
+  width: 350px;
   height: auto;
   border-radius: 10px;
 }
@@ -181,18 +180,25 @@ li .vscodeImg {
   width: 12px;
 }
 
+.home-socials i {
+  font-size: 35px;
+  color: black;
+  margin-right: 15px;
+}
+
+.home-socials i:hover {
+  cursor: pointer;
+}
+
 #contact i {
   font-size: 50px;
   color: black;
 }
 
-.contact {
-  margin: 0 25px;
-}
-
 .contact-body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
@@ -295,7 +301,7 @@ li .vscodeImg {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-  background-color:#ff595a;
+  background-color: #ff595a;
 }
 
 .onpage::after {
@@ -308,7 +314,8 @@ li .vscodeImg {
 }
 
 .contact {
-  padding-block-end: 15em;
+  margin: 0 25px;
+  padding-block-end: 250px;
 }
 
 .about h1,
@@ -320,20 +327,9 @@ li .vscodeImg {
   color: #ff595a;
 }
 
-.home-socials i {
-  font-size: 35px;
-  color: black;
-  margin-right: 15px;
-}
-
-.home-socials i:hover {
-  cursor: pointer;
-}
-
 .button {
   font-size: 1.2rem;
   border: none;
-  width: min-content;
   background-color: #ff595a;
   padding: 5px 15px;
   border-radius: 5px;
@@ -350,11 +346,6 @@ li .vscodeImg {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.2);
 }
 
-.contact-body {
-  display: flex;
-  align-items: center;
-}
-
 div .contact-me {
   display: flex;
   justify-content: center;
@@ -364,7 +355,7 @@ div .contact-me {
 }
 
 .contact-me input {
-  margin: 10px 0px;
+  margin: 10px 0;
   height: 35px;
 }
 
@@ -381,7 +372,7 @@ div .contact-me {
 
 .contact-me button {
   margin-left: auto;
-} 
+}
 
 @media screen and (max-width: 1024px) {
   .front-page {
@@ -428,12 +419,12 @@ div .contact-me {
   }
 
   .nav-item,
-  .nav-item a{
-    background-color:black;
+  .nav-item a {
+    background-color: black;
     color: white;
   }
 
-  .nav-links.activated a{
+  .nav-links.activated a {
     color: white;
   }
 
@@ -447,9 +438,9 @@ div .contact-me {
   }
 
   .intro img {
-    width:250px;
+    width: 250px;
     height: auto;
-  }  
+  }
 }
 
 @media screen and (max-width: 590px) {
