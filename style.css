@@ -26,7 +26,8 @@ body {
   align-items: center;
   justify-content: space-around;
   width: 100vw;
-  height: 10vh;
+  height: 4rem;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.2);
 }
 
 .nav-links {
@@ -52,7 +53,7 @@ body {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: #001233;
+  background-color: black;
 }
 
 .hamburger {
@@ -63,28 +64,28 @@ body {
 }
 
 .header-text span {
-  color: #ff595a;
+  color: rgba(0, 0, 255, 0.795);
 }
 
-.header-text p,
 .header-text h1,
 .nav-name span {
-  color: #001233;
+  color: black;
 }
 
-.header-text p {
-  font-size: 1.2em;
+.header-text {
+  font-size: 0.7rem;
 }
 
 .header-text h1 {
-  font-size: 4em;
+  font-size: 3em;
+  line-height: 1.5em;
 }
 
 .front-page {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 90vh;
+  height: 88vh;
   margin: 0 25px;
 }
 
@@ -95,7 +96,7 @@ body {
 }
 
 .about {
-  color: #001233;
+  color: black;
   margin: 0 25px;
   padding-block: 6em;
 }
@@ -110,7 +111,7 @@ body {
 #contact {
   margin-bottom: 2em;
   text-align: center;
-  color: #001233;
+  color: black;
 }
 
 .intro,
@@ -125,7 +126,7 @@ body {
 .skillset h3 {
   text-align: center;
   padding: 5px;
-  color: #09111f;
+  color: black;
 }
 
 .intro p,
@@ -192,7 +193,7 @@ body {
 }
 
 .project {
-  color: #001233;
+  color: black;
   background-color: #cac0b3;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
@@ -239,7 +240,7 @@ body {
 
 .nav-name,
 .nav-links > li > a {
-  color: #001233;
+  color: black;
 }
 
 .projects {
@@ -250,7 +251,30 @@ body {
 .project-header h1,
 .contact h1 {
   font-size: 1.6em;
-  color: #000e26;
+  color: black;
+}
+
+.home-socials i {
+  font-size: 35px;
+  color: black;
+}
+
+.button {
+  font-size: 1rem;
+  border: none;
+  width: min-content;
+  background-color: rgba(0, 0, 255, 0.795);
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: white;
+  transition: 0.7s ease;
+  margin: 25px 0;
+}
+
+.button:hover {
+  background: #ff595a;
+  transition: 0.7s ease;
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 1024px) {
@@ -284,7 +308,7 @@ body {
 
   .nav-links {
     position: fixed;
-    top: 70px;
+    top: 67px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -292,15 +316,27 @@ body {
     min-height: 450px;
     height: 90%;
     transition: 0.3s;
-    left: -100%;
+    right: -100%;
+    background-color: black;
+  }
+
+  .nav-item,
+  .nav-item a{
+    background-color:black;
+    color: white;
+  }
+
+  .nav-links.activated a{
+    color: white;
   }
 
   .nav-links.activated {
-    left: 0;
+    right: 0;
   }
 
   .front-page {
     padding-top: 4em;
+    height: 90vh;
   }
 }
 
