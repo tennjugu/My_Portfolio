@@ -117,7 +117,6 @@ html {
 .skillset h1,
 #contact {
   margin-bottom: 2em;
- 
 }
 
 .about h1,
@@ -185,11 +184,15 @@ html {
   font-size: 1em;
 }
 
+.tech h4 {
+  padding-bottom: 2em;
+}
+
 .skillset li h4 {
   font-size: 1.1rem;
 }
 
-.listed-skills{
+.listed-skills {
   display: flex;
   width: 80%;
   text-align: center;
@@ -208,10 +211,6 @@ html {
 .tech p {
   display: block;
   padding-top: 3em;
-}
-
-.tech h4 {
-  padding-bottom: 2em;
 }
 
 li .vscodeImg {
