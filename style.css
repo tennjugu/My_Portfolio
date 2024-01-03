@@ -34,7 +34,7 @@ html {
   width: 100vw;
   height: 4rem;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.2);
-  gap: 50%;
+  gap: 40%;
 }
 
 .nav-links {
@@ -115,11 +115,21 @@ html {
 
 .about h1,
 .skillset h1,
-.project-header h1,
 #contact {
   margin-bottom: 2em;
+}
+
+.about h1,
+.skillset h1,
+#contact,
+.project-header h1,
+.project-header p {
   text-align: center;
   color: black;
+}
+
+.project-header p {
+  margin-bottom: 3em;
 }
 
 .skillset {
@@ -174,13 +184,33 @@ html {
   font-size: 1em;
 }
 
+.tech h4 {
+  padding-bottom: 2em;
+}
+
 .skillset li h4 {
   font-size: 1.1rem;
 }
 
-.skill-mockup {
-  width: 400px;
-  border-radius: 10px;
+.listed-skills {
+  display: flex;
+  width: 80%;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.tech {
+  width: 40%;
+}
+
+.tech i {
+  font-size: 4em;
+  margin: 0 7px;
+}
+
+.tech p {
+  display: block;
+  padding-top: 3em;
 }
 
 li .vscodeImg {
@@ -541,6 +571,15 @@ div .contact-me {
   .listed-skills {
     padding-left: 2em;
     margin-bottom: 50px;
+    display: block;
+  }
+
+  .tech {
+    width: 100%;
+  }
+
+  .tools {
+    padding-top: 2em;
   }
 
   .projects {
