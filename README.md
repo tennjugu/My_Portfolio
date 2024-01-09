@@ -45,4 +45,4 @@ Here are some of the projects I have worked on:
 
 ## Credits
 
-Special thanks to [AVS1508](https://github.com/AVS1508) for the GitHub profile inspiration. Check out their live version [here](https://people.umass.edu/avsingh/).
+Special thanks to [AVS1508](https://github.com/AVS1508) for the GitHub profile inspiration. Click [here](https://people.umass.edu/avsingh/) for the live version.
